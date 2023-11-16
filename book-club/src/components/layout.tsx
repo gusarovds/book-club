@@ -21,7 +21,7 @@ export default function RootLayout({
   const { store } = wrapper.useWrappedStore(rest);
   return (
         <Provider store={store}>
-          <div className={mainFont.className}>
+          <div className={`${mainFont.className} bg-slate-200 text-gray-950`}>
             <Header/>
             <Timeline/>
             <div className="flex flex-col items-center">
