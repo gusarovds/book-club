@@ -37,7 +37,7 @@ export const postsSlice = createSlice({
 
 export const { setCurrentYearPosts } = postsSlice.actions;
 
-export const selectCurrentPosts = (state: AppState) => state.posts.currentPosts;
-export const selectYears = (state: AppState) => state.posts.years;
+export const selectCurrentPosts = (state: AppState) => state.posts.currentPosts as Post[];
+export const selectYears = (state: AppState) => state.posts.years as number[];
 
 export default postsSlice.reducer;
