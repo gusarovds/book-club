@@ -8,7 +8,7 @@ import { Rating } from '@/components/Rating'
 const Post: FC<PostProps> = ({ data }) => {
     const { title, author, pics, ts_end, annotation, quotes, readers, locale } = data
 
-    return <div className="min-w-600 max-w-600 p-4 bg-white shadow-md rounded-md flex flex-col items-center">
+    return <div className="min-w-600 max-w-600 p-4 bg-white shadow-md rounded-md flex flex-col items-center mb-8">
         <Heading level="h1" text={title}/>
         <Heading level="h2" text={author}/>
         <Image width={300} height={300} className="my-5"
