@@ -18,7 +18,7 @@ const Posts = () => {
 
     const posts = useSelector(selectCurrentPosts);
 
-    return <div>
+    return <div className="w-full max-w-600 px-4">
         {posts.map((post, i) => <div id={post.anchor} key={i}><Post data={post}></Post></div>)}
     </div>
 }

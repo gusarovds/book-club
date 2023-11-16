@@ -11,7 +11,7 @@ const Heading: FC<HeadingProps> = ({ level, text }) => {
         h3: '2xl'
     }
 
-    return <Tag className={`${mainFont.className} text-red-500 font-semibold ${level === 'h1' ? 'text-4xl' : 'text-3xl'}`}>{text}</Tag>
+    return <Tag className={`${mainFont.className} text-red-500 font-semibold text-center ${level === 'h1' ? 'text-4xl' : 'text-3xl'}`}>{text}</Tag>
 }
 
 export default Heading
