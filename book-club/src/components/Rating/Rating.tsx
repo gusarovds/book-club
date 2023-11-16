@@ -23,8 +23,9 @@ const Rating: FC<RatingProps> = ({ readers, locale }) => {
         characters: 0,
         total: 0
     } as Record<RatingTypes, number>)
+    const ratingSum = Object.values(ratings).reduce((acc, sum) => acc + sum, 0)
 
-    return <div className="text-xl w-full">
+    return !!(ratingSum > 0) && <div className="text-xl w-full">
         {fields.map((field) => <div key={field} className="flex justify-between mt-4">
             {`${RATING_TYPE_TO_HUMAN_READABLE[field][locale]}:`}
             <TooltipUi placement="left" title={Math.round(ratings[field] / count * 10) / 10}>

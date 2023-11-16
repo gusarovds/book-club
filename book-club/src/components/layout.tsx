@@ -6,6 +6,7 @@ import localFont from 'next/font/local'
 const mainFont = localFont({ src: '../../public/fonts/bertsans_light.ttf' })
 import { Provider } from 'react-redux';
 import { wrapper } from "@/store/store";
+import Head from 'next/head';
 
 const metadata: Metadata = {
   title: MAIN_PAGE.title,
@@ -21,6 +22,10 @@ export default function RootLayout({
   const { store } = wrapper.useWrappedStore(rest);
   return (
         <Provider store={store}>
+          <Head>
+            <title>Книжный клуб</title>
+            <link rel="shortcut icon" href="/logo.png" />
+          </Head>
           <div className={`${mainFont.className} bg-slate-200 text-gray-950 flex flex-col`}>
             <Header/>
             <Timeline/>

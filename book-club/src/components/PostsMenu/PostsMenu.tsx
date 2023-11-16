@@ -20,8 +20,7 @@ const PostsMenu = () => {
       setAnchorEl(null);
     };
     const maxYear =  Math.max(...years)
-    const currentYear = router.query?.year?.[0] || Math.max(...years)
-    const otherYears = years.filter((year) => year !== +currentYear && year !== maxYear)
+    const otherYears = years.filter((year) => year !== maxYear)
 
     return <div>
         {years.length > 1 && <div>

@@ -26,13 +26,14 @@ export const postsSlice = createSlice({
   },
 
   // Special reducer for hydrating the state. Special case for next-redux-wrapper
-  extraReducers: {
-    [HYDRATE]: (state, action) => {
+  extraReducers: (builder) => {
+    builder.addCase(HYDRATE, (state, action) => {
+      console.log('HYDRATE', state, action.payload);
       return {
         ...state,
-        ...action.payload.auth,
+        ...action.payload.posts,
       };
-    },
+    })
   },
 });
 

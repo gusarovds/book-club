@@ -11,9 +11,12 @@ const Post: FC<PostProps> = ({ data }) => {
     return <div className="w-full p-4 bg-white shadow-md rounded-md flex flex-col items-center mb-8">
         <Heading level="h1" text={title}/>
         <Heading level="h2" text={author}/>
-        <Image width={300} height={300} className="my-5"
+        <Image 
+            width={300}
+            height={300}
+            className="my-5 h-auto w-6/12"
             src={pics[0]}
-            alt={title}
+            alt=""
         />
         <p className="text-bold mb-5 font-bold self-end">{ ts_end }</p>
         <p className="self-start text-justify text-xl mb-4" >{ annotation }</p>
