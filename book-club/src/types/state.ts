@@ -1,20 +1,13 @@
-interface BookRating {
-    plot: number,
-    atmosphere: number,
-    characters: number,
-    total: number
-}
-
+type Rating = 'plot' | 'atmosphere' | 'characters' | 'total'
+type BookRating = Record<Rating, number>
 type ReaderName = 'anya' | 'vera' | 'timur' | 'dima'
-type ReaderField = 'rating' | 'promoter'
+type Locale = 'en' | 'ru'
+type Readers = Record<ReaderName, ReaderInfo>
 
 interface ReaderInfo {
     promoter?: boolean,
     rating?: BookRating
 }
-
-
-type Readers = Record<ReaderName, ReaderInfo>
 
 interface Post {
     title: string,
@@ -25,10 +18,15 @@ interface Post {
     quotes: string[],
     emoji: string,
     anchor: string,
-    locale?: 'en' | 'ru',
+    locale?: Locale,
     readers: Readers
 }
 
 type State = Record<string, Record<string, Post[]>>
+interface PostsStore { 
+    posts: State
+    currentPosts: Post[],
+    years: number[]
+ }
 
-export type { State }
+export type { State, Post, Readers, Rating, Locale, PostsStore }

@@ -1,11 +1,11 @@
 import { State } from '@/types/state'
 
 const state: State = {
-    "2022": {
+    "2023": {
         "posts": [{
             "title": "Neverwhere",
             "author": "Neil Gaiman",
-            "pics": ["db/pics/0003.jpg"],
+            "pics": ["/img/0003.jpg"],
             "ts_end": "reading...",
             "annotation": "Under the streets of London lies a world most people could never dream of.\nWhen Richard Mayhew stops to help a girl he finds bleeding in the street, his unremarkable life changes in an instant.\nThis act of kindness leads him to a place filled with murderers and angels, pale girls in black velvet, a Beast in a labyrinth and an Earl who holds Court in a tube train. It is strangely familiar yet utterly bizarre.\nHere is London Below, the city of people who have fallen between the cracks. And for Richard Mayhew, it's just the beginning.",
             "quotes": [],
@@ -15,18 +15,18 @@ const state: State = {
             "readers": {
             "anya": {
                 "rating": {
-                "plot": 0,
-                "atmosphere": 0,
-                "characters": 0,
-                "total": 0
+                    "plot": 0,
+                    "atmosphere": 0,
+                    "characters": 0,
+                    "total": 0
                 }
             },
             "vera": {
                 "rating": {
-                "plot": 0,
-                "atmosphere": 0,
-                "characters": 0,
-                "total": 0
+                    "plot": 0,
+                    "atmosphere": 0,
+                    "characters": 0,
+                    "total": 0
                 }
             },
             "timur": {
@@ -51,7 +51,7 @@ const state: State = {
         {
             "title": "Клуб неисправимых оптимистов",
             "author": "Жан-Мишель Генассия",
-            "pics": ["db/pics/0002.jpg"],
+            "pics": ["/img/0002.jpg"],
             "ts_end": "01.11.2023",
             "annotation": "Герою романа двенадцать лет. Это Париж начала шестидесятых. И это пресловутый переходный возраст, когда все — школа, общение с родителями и вообще жизнь — дается трудно. Мишель Марини ничем не отличается от сверстников, кроме увлечения фотографией и самозабвенной любви к чтению. А еще у него есть тайное убежище — это задняя комнатка парижского бистро. Там странные люди, бежавшие из стран, отделенных от свободного мира железным занавесом, спорят, тоскуют, играют в шахматы в ожидании, когда решится их судьба. Удивительно, но именно здесь, в этой комнатке, прозванной Клубом неисправимых оптимистов, скрещиваются силовые линии эпохи.",
             "quotes": [
@@ -100,7 +100,7 @@ const state: State = {
         {
             "title": "12 стульев",
             "author": "Ильф Илья, Петров Евгений",
-            "pics": ["db/pics/0001.jpg"],
+            "pics": ["/img/0001.jpg"],
             "ts_end": "04.09.2023",
             "annotation": "Бывший богач, светский лев и «предводитель дворянства» Ипполит Воробьянинов после революции стал обычным делопроизводителем ЗАГСа в маленьком городе. Он не забыл еще своих прежних привычек и часто грезит о былой жизни. Однажды размеренный ход жизни оказывается нарушен — умирающая теща поведала Воробьянинову об огромном богатстве, во время революции спрятанном ею в один из стульев гостиного гарнитура. Он тут же бросается на поиски, вместе со встречнным им «великим комбинатором», мошенником и любителем денежных знаков Остапом Бендером. Сокровище найти будет нелегко, но обуянные страстью к богатству Бендер и Воробьянинов не остановятся ни перед чем...",
             "quotes": [
