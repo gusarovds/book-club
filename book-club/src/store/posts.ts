@@ -1,12 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 import { AppState } from "./store";
 import { HYDRATE } from "next-redux-wrapper";
 import { PostsStore, Post } from '@/types/state'
 import stateConst from '@/constants/state'
 
-export interface AuthState {
-  authState: boolean;
-}
+
 const years = Object.keys(stateConst).map(Number)
 
 const initialState: PostsStore = {
@@ -28,9 +26,9 @@ export const postsSlice = createSlice({
   // Special reducer for hydrating the state. Special case for next-redux-wrapper
   extraReducers: (builder) => {
     builder.addCase(HYDRATE, (state, action) => {
-      console.log('HYDRATE', state, action.payload);
       return {
         ...state,
+        // @ts-ignore:next-line
         ...action.payload.posts,
       };
     })
