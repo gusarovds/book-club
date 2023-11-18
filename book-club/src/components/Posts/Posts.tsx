@@ -10,9 +10,7 @@ const Posts = () => {
     const params = useParams();
     const years = useSelector(selectYears);
     const dispatch = useDispatch();
-    const effect = 
-    
-    
+
     useEffect(() => {
         dispatch(setCurrentYearPosts((params?.year || Math.max(...years))))
     }, [params, dispatch, years])

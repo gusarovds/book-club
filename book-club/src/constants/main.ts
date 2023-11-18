@@ -1,4 +1,4 @@
 export const MAIN_PAGE: Record<string, string> = {
-    title: 'Book club',
+    title: 'Книжный клуб',
     description: 'Just another petproject'
 }

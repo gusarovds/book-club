@@ -4,8 +4,7 @@ import { HYDRATE } from "next-redux-wrapper";
 import { PostsStore, Post } from '@/types/state'
 import { stateDev, stateProd } from '@/constants/state'
 
-const stateConst = process.env.ENV === 'dev' ? stateDev : stateProd
-
+const stateConst = process.env.NEXT_PUBLIC_ENV === 'dev' ? stateDev : stateProd
 const years = Object.keys(stateConst).map(Number)
 
 const initialState: PostsStore = {

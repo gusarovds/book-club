@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import { wrapper } from "@/store/store";
 import Head from 'next/head';
 
-const metadata: Metadata = {
+const metadata = {
   title: MAIN_PAGE.title,
   description: MAIN_PAGE.description,
 }
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
         <Provider store={store}>
           <Head>
-            <title>Книжный клуб</title>
+            <title>{ metadata.title }</title>
             <link rel="shortcut icon" href="/logo.png" />
           </Head>
           <div className={`${mainFont.className} bg-slate-200 text-gray-950 flex flex-col`}>
