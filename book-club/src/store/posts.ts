@@ -2,8 +2,9 @@ import { createSlice } from "@reduxjs/toolkit"
 import { AppState } from "./store";
 import { HYDRATE } from "next-redux-wrapper";
 import { PostsStore, Post } from '@/types/state'
-import stateConst from '@/constants/state'
+import { stateDev, stateProd } from '@/constants/state'
 
+const stateConst = process.env.ENV === 'dev' ? stateDev : stateProd
 
 const years = Object.keys(stateConst).map(Number)
 
