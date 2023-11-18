@@ -5,7 +5,7 @@ const stateDev: State = {
         "posts": [{
             "title": "Neverwhere",
             "author": "Neil Gaiman",
-            "pics": ["/img/0003.jpg"],
+            "pics": ["/img/0003.jpg", "/img/0002.jpg"],
             "ts_end": "reading...",
             "annotation": "Under the streets of London lies a world most people could never dream of.\nWhen Richard Mayhew stops to help a girl he finds bleeding in the street, his unremarkable life changes in an instant.\nThis act of kindness leads him to a place filled with murderers and angels, pale girls in black velvet, a Beast in a labyrinth and an Earl who holds Court in a tube train. It is strangely familiar yet utterly bizarre.\nHere is London Below, the city of people who have fallen between the cracks. And for Richard Mayhew, it's just the beginning.",
             "quotes": [],
@@ -100,7 +100,7 @@ const stateDev: State = {
         {
             "title": "12 стульев",
             "author": "Ильф Илья, Петров Евгений",
-            "pics": ["/img/0001.jpg"],
+            "pics": ["/img/0001.jpg", "/img/0002.jpg"],
             "ts_end": "04.09.2023",
             "annotation": "Бывший богач, светский лев и «предводитель дворянства» Ипполит Воробьянинов после революции стал обычным делопроизводителем ЗАГСа в маленьком городе. Он не забыл еще своих прежних привычек и часто грезит о былой жизни. Однажды размеренный ход жизни оказывается нарушен — умирающая теща поведала Воробьянинову об огромном богатстве, во время революции спрятанном ею в один из стульев гостиного гарнитура. Он тут же бросается на поиски, вместе со встречнным им «великим комбинатором», мошенником и любителем денежных знаков Остапом Бендером. Сокровище найти будет нелегко, но обуянные страстью к богатству Бендер и Воробьянинов не остановятся ни перед чем...",
             "quotes": [
