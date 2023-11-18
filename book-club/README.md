@@ -1,1 +1,1 @@
-Deployed to Vercel [Link](https://book-club-kohl.vercel.app/)
+Deployed to Vercel [Link](https://book-club-kohl.vercel.app/) 
